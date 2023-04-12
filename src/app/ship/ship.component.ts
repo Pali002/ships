@@ -37,11 +37,11 @@ export class ShipComponent implements OnInit {
     });
   }
 
-  onClickSaveButton() {
+  onClickSaveButton(){
 
     let ship ={
       name: this.shipForm.value.name,
-      lenght: this.shipForm.value.lenght,
+      length: this.shipForm.value.length,
       price: this.shipForm.value.price,
       person: this.shipForm.value.person,
       trailer: this.shipForm.value.trailer
