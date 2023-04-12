@@ -10,7 +10,6 @@
     <table>
         <thead>
             <tr>
-                <th>Az</th>
                 <th>Név</th>
                 <th>Hossz</th>
                 <th>Ár</th>
@@ -20,7 +19,6 @@
         </thead>
         <tbody *ngFor="let ship of ships">
             <tr>
-                <td>{{ship.id}}</td>
                 <td>{{ship.name}}</td>
                 <td>{{ship.lenght}}</td>
                 <td>{{ship.price}}</td>
@@ -44,17 +42,13 @@
         <div class="modal-body">
 
           <form [formGroup]="shipForm">
-            <div class="mt-3">
-                <label for="id" class="form-label">Azonosító</label>
-                <input type="text" id="id" class="form-control" formControlName="id">
-            </div>
           <div class="mt-3">
                 <label for="name" class="form-label">Név</label>
                 <input type="text" id="name" class="form-control" formControlName="name">
             </div>
             <div class="mt-3">
-                <label for="lenght" class="form-label">Hossz</label>
-                <input type="text" id="lenght" class="form-control" formControlName="lenght">
+                <label for="length" class="form-label">Hossz</label>
+                <input type="text" id="length" class="form-control" formControlName="length">
             </div>
             <div class="mt-3">
                 <label for="price" class="form-label">Ár</label>

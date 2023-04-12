@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ApiService } from '../shared/api.service';
 
 @Component({
-  selector: 'app-emp',
+  selector: 'app-ship',
   templateUrl: './ship.component.html',
   styleUrls: ['./ship.component.scss']
 })
@@ -19,9 +19,8 @@ export class ShipComponent implements OnInit {
   ngOnInit(): void {
     this.getShips();
     this.shipForm = this.formBuilder.group({
-      id: [''],
       name: [''],
-      lenght: [''],
+      length: [''],
       price: [''],
       person: [''],
       trailer: ['']
@@ -38,7 +37,7 @@ export class ShipComponent implements OnInit {
     });
   }
 
-  onClickSaveButton(){
+  onClickSaveButton() {
 
     let ship ={
       name: this.shipForm.value.name,
